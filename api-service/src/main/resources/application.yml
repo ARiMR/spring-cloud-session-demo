@@ -1,0 +1,14 @@
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+spring:
+  application:
+    name: api-service
+  session:
+    store-type: mongodb
+ribbon:
+  eager-load:
+    enabled: true
